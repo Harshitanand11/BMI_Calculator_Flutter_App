@@ -21,6 +21,7 @@ class _InputPageState extends State<InputPage> {
      Gender selectedgender;
 
      int height=180;
+     int weight = 60;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,7 +64,7 @@ class _InputPageState extends State<InputPage> {
             colour: kActiveCardColour,
             cardChild:Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[Text('HEIGHT', style: labelTextStyle,),
+              children: <Widget>[Text('HEIGHT', style: klabelTextStyle,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.baseline,
@@ -71,7 +72,7 @@ class _InputPageState extends State<InputPage> {
                 children: [Text(height.toString(),
                     style: kNumberTextStyle
                 ),
-                Text('cm',style: labelTextStyle),
+                Text('cm',style: klabelTextStyle),
 
                 ],
 
@@ -107,6 +108,35 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 child: Reusablecard(
                   colour: kActiveCardColour,
+                  cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text('Weight',style:klabelTextStyle,
+                          ),
+                      Text(
+                          weight.toString(),
+                        style:kNumberTextStyle,
+                       ),
+                      Row(
+                        children: [
+                          FloatingActionButton(
+                            backgroundColor: Color(0xFF4C4F5E),
+                          child: Icon(Icons.add,color: Colors.white,),
+                          ),
+                          SizedBox(width: 10,),
+                          FloatingActionButton(
+                            backgroundColor: Color(0xFF4C4F5E),
+                            child: Icon(Icons.,color: Colors.white,),
+                          )
+                        ],
+                      )
+
+
+
+
+                    ],
+
+                  ),
 
                   
                 )),
