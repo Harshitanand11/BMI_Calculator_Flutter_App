@@ -16,7 +16,7 @@ class Bottombutton extends StatelessWidget {
           margin: EdgeInsets.only(top: 10.0),
           width: double.infinity,
           height: 50,
-          child: Center(child: Text(buttontitle),
+          child: Center(child: Text(buttontitle,style: TextStyle(fontSize: 25)),
           ),
         ));
   }
